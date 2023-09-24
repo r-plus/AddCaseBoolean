@@ -15,7 +15,12 @@ import AddCaseBooleanMacros
 /// will generate `isFoo` computed property.
 ///
 ///    ```swift
-///    var isFoo: Bool {...}
+///    var isFoo: Bool {
+///        if case .foo = self {
+///            return true
+///        }
+///        return false
+///    }
 ///    ```
 ///
 @attached(member, names: arbitrary)
