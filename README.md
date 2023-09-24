@@ -22,3 +22,9 @@ var isFoo: Bool {
     return false
 }
 ```
+
+## Install
+
+```swift
+.package(url: "https://github.com/r-plus/AddCaseBoolean.git", from: "0.0.1")
+```
